@@ -1,0 +1,46 @@
+==50430== Invalid write of size 1
+==50430==    at 0x109530: ft_formline (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109258: get_next_line (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109AE3: main (in /home/ds/42/gnl-tests_04/a.out)
+==50430==  Address 0x4a81901 is 0 bytes after a block of size 1 alloc'd
+==50430==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==50430==    by 0x1094B2: ft_formline (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109258: get_next_line (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109AE3: main (in /home/ds/42/gnl-tests_04/a.out)
+==50430== 
+==50430== Invalid write of size 1
+==50430==    at 0x109543: ft_formline (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109258: get_next_line (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109AE3: main (in /home/ds/42/gnl-tests_04/a.out)
+==50430==  Address 0x4a81902 is 1 bytes after a block of size 1 alloc'd
+==50430==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==50430==    by 0x1094B2: ft_formline (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109258: get_next_line (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109AE3: main (in /home/ds/42/gnl-tests_04/a.out)
+==50430== 
+==50430== Invalid read of size 1
+==50430==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==50430==    by 0x48D4D44: __vfprintf_internal (vfprintf-internal.c:1688)
+==50430==    by 0x48BDD6E: printf (printf.c:33)
+==50430==    by 0x109AFF: main (in /home/ds/42/gnl-tests_04/a.out)
+==50430==  Address 0x4a81901 is 0 bytes after a block of size 1 alloc'd
+==50430==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==50430==    by 0x1094B2: ft_formline (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109258: get_next_line (in /home/ds/42/gnl-tests_04/a.out)
+==50430==    by 0x109AE3: main (in /home/ds/42/gnl-tests_04/a.out)
+==50430== 
+_(null)==50430== 
+==50430== HEAP SUMMARY:
+==50430==     in use at exit: 988 bytes in 8 blocks
+==50430==   total heap usage: 515 allocs, 507 frees, 162,302 bytes allocated
+==50430== 
+==50430== LEAK SUMMARY:
+==50430==    definitely lost: 987 bytes in 7 blocks
+==50430==    indirectly lost: 0 bytes in 0 blocks
+==50430==      possibly lost: 0 bytes in 0 blocks
+==50430==    still reachable: 1 bytes in 1 blocks
+==50430==         suppressed: 0 bytes in 0 blocks
+==50430== Rerun with --leak-check=full to see details of leaked memory
+==50430== 
+==50430== For lists of detected and suppressed errors, rerun with: -s
+==50430== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
